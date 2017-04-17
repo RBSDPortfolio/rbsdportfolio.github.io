@@ -1,0 +1,478 @@
+*{
+  box-sizing: border-box;
+}
+
+/* tab styles */
+
+.tabs {
+  display: inline-block;
+  position: fixed;
+  left: 0;
+  bottom: 2.5rem;
+  width: 100%;
+  height: 5rem;
+  z-index: 10003;
+  font-size: 1.5rem;
+}
+
+.tabs p {
+  font-size: 1.3rem;
+}
+
+.event {
+  color: #fff;
+  height: 8rem;
+  width: 33.333333%;
+  float: left;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.students {
+  color: #fff;
+  height: 8rem;
+  width: 33.333333%;
+  float: left;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.explore {
+  color: #fff;
+  height: 8rem;
+  width: 33.333333%;
+  float: left;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+/* dropdown nav styles */
+
+span {
+  padding: 0 0 1rem 0;
+  color: #003056;
+  cursor: pointer;
+  display: block;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: .05rem;
+  font-weight: bold;
+}
+
+span::after {
+  margin: 0 0 0 1rem;
+  content: "▾";
+}
+
+@media (min-width: 800px) {
+  span { font-size: 2.4rem;}
+}
+
+.slide {
+  clear:both;
+  width:100%;
+  height:0px;
+  overflow: hidden;
+  text-align: center;
+  transition: height .4s ease;
+}
+
+#touch {position: absolute; opacity: 0; height: 0px;}
+
+#touch:checked + .slide {height: 5rem;}
+
+/* student nav styles */
+
+.menu-wrapper {
+  overflow: hidden;
+  height: 5.4rem;
+}
+
+.menu {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 8rem;
+}
+
+.menu > li {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.menu > li > a {
+  display: inline-block;
+  text-decoration: none;
+  color: #333333;
+  font-size: 1.5rem;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+.menu-wrapper--special {
+  position: relative;
+}
+
+.menu-wrapper--special::after {
+  content: "";
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #f3f3f3 25%);
+  height: 100%;
+  width: 6rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.menu-wrapper--special .menu > li:last-child {
+  padding-right: 3.6rem;
+}
+
+/* event page styles */
+
+.landing {
+  display: inline-block;
+  width: 100%;
+  height: 12rem;
+  background-color: #fff;
+  background-blend-mode: multiply;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0)
+    ),
+    url(../img/glab-ceiling-gradient.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position:center center;
+  text-align: center;
+}
+
+.landing svg {
+  margin: 1rem 0 0 0;
+  height: 10rem;
+  width: 18rem;
+}
+
+@media (min-width: 750px) {
+  .landing {
+    height: 25rem;
+  }
+
+  .landing svg {
+    margin: 4.5rem;
+    height: 15rem;
+    width: 65rem;
+  }
+}
+
+.intro {
+  width: 100%;
+  color: #0C3056;
+  text-align: center;
+}
+
+.intro p {
+  margin: 2rem 0 0 0;
+  font-size: 1.5rem;
+}
+
+.description {
+  margin: 2.5rem 0 0 0;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 600px) {
+  .rsvp {
+    margin-top: 3rem;
+  }
+}
+
+.register {
+  text-align: center;
+  margin: 3rem 0 0 0;
+  background: #fff;
+  padding: 2rem 0;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.14),
+              0px 1px 5px 0px rgba(0,0,0,0.12),
+              0px 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.register p {
+  font-size: 1.3rem;
+  margin-bottom: 0;
+  color: #003056;
+}
+
+
+.register-btn {
+  color: #fff;
+  text-align: center;
+  background: #0C3056;
+  padding: 1rem;
+  letter-spacing: .15rem;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.14),
+              0px 1px 5px 0px rgba(0,0,0,0.12),
+              0px 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.register-btn a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+.register-btn:hover {
+  color: #666;
+  background: #071C33;
+  transition: all 300ms ease-in-out;
+}
+
+.header {
+  text-align: center;
+  margin: 3rem 0 1rem 0;
+}
+
+.subhead {
+  text-align: center;
+}
+
+.student-thumb {
+  width: 100%;
+}
+
+.student-thumb img {
+  width: 100%;
+}
+
+.student-thumb p {
+  color: #003056;
+  height: 2rem;
+  padding: 1rem 0 2rem 0;
+  text-align: center;
+}
+
+.student-thumb a {
+  text-decoration: none;
+}
+
+.student-pic {
+  margin: 0 0 2rem 0;
+}
+
+.student-pic img {
+  width: 20rem;
+  height: auto;
+  margin: 5rem 0 1rem 0;
+}
+
+.student-pic p {
+  margin: 0;
+}
+
+.student-pic h5 {
+  margin: 1rem 0 1rem 0;
+}
+
+.student-pic a {
+  color: #003056;
+  text-decoration: none;
+}
+
+@media (max-width: 800px) {
+
+  .student-pic {
+    text-align: center;
+  }
+
+}
+
+.view-portfolio {
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  margin: .5rem 0rem;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.14),
+              0px 1px 5px 0px rgba(0,0,0,0.12),
+              0px 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.view-portfolio:hover {
+  background: #E5E5E5;
+  transition: all 300ms ease-in-out;
+}
+
+.view-resume {
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  margin: .5rem 0rem;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.14),
+              0px 1px 5px 0px rgba(0,0,0,0.12),
+              0px 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.view-resume:hover{
+  background: #E5E5E5;
+  transition: all 300ms ease-in-out;
+}
+
+@media (min-width: 800px) {
+  .view-portfolio {
+    width: 20rem;
+  }
+
+  .view-resume {
+    width: 20rem;
+  }
+}
+
+.project-img {
+  height: auto;
+  margin: 5rem 0 0 0;
+  outline: 1px #e7e7e7 solid;
+  line-height: 0;
+  font-size: 0;
+}
+
+@media (max-width: 800px) {
+  .project-img {
+    margin: 3rem 0 0 0;
+  }
+}
+
+.spacer {
+  height: 12rem;
+}
+
+.info-button {
+  display: inline-block;
+  height: auto;
+  width: 100%;
+  padding: 2rem;
+  color: #003056;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin: 0 0 1rem 0;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.14),
+              0px 1px 5px 0px rgba(0,0,0,0.12),
+              0px 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.info-button a {
+  color: #003056;
+  margin-left: 1rem;
+}
+
+.info-next {
+  display: inline-block;
+  float: right;
+}
+
+.info-button:hover {
+  background: #E5E5E5;
+  transition: all 300ms ease-in-out;
+}
+
+.info-button:before{
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  line-height: 3;
+  font-size: 140%;
+  width: 60px;
+}
+
+.feedback-button-top {
+  display: inline-block;
+  height: auto;
+  width: 20rem;
+  padding: 1.5rem 3rem;
+  color: #003056;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-align: center;
+  margin: .5rem 0rem;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.14),
+              0px 1px 5px 0px rgba(0,0,0,0.12),
+              0px 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.feedback-button-top a {
+  color: #003056;
+}
+
+.feedback-button-top:hover {
+  background: #E5E5E5;
+  transition: all 300ms ease-in-out;
+}
+
+@media (max-width: 800px) {
+  .feedback-button-top {
+    display: none;
+  }
+}
+
+.feedback-button-bottom {
+  display: inline-block;
+  height: auto;
+  width: 100%;
+  padding: 2rem;
+  color: #003056;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin: 4rem 0 0 0;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.14),
+              0px 1px 5px 0px rgba(0,0,0,0.12),
+              0px 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.feedback-button-bottom a {
+  color: #003056;
+}
+
+.feedback-button-bottom:hover {
+  background: #E5E5E5;
+  transition: all 300ms ease-in-out;
+}
+
+@media (min-width: 801px) {
+  .feedback-button-bottom {
+    display: none;
+  }
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact p {
+  margin: 0;
+}
+
+.contact ul {
+  list-style: none;
+}
+
+.contact ul li{
+  display: inline-block;
+  padding: 0.5rem 1rem 0 0;
+}
