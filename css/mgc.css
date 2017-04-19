@@ -108,7 +108,7 @@ span::after {
   display: inline-block;
   text-decoration: none;
   color: #333333;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   padding: 1rem 2rem 1rem 2rem;
 }
 
@@ -118,7 +118,7 @@ span::after {
 
 .menu-wrapper--special::after {
   content: "";
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), #f3f3f3 25%);
+
   height: 100%;
   width: 6rem;
   position: absolute;
