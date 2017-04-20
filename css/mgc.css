@@ -231,6 +231,10 @@ span::after {
   transition: all 300ms ease-in-out;
 }
 
+.map {
+  background: #7F7F7F;
+}
+
 .bar {
   background: #003056;
   width: 100%;
