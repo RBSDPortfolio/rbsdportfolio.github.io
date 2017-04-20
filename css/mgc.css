@@ -77,6 +77,18 @@ span::after {
   transition: height .4s ease;
 }
 
+@media (min-width: 800px){
+
+  .slide ul, li {
+    display: inline-block;
+  }
+
+  .slide li {
+    margin: 0 20px;
+  }
+}
+
+
 #touch {position: absolute; opacity: 0; height: 0px;}
 
 #touch:checked + .slide {height: 5rem;}
