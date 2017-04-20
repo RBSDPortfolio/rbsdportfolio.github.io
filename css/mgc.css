@@ -235,6 +235,10 @@ span::after {
   background: #7F7F7F;
 }
 
+.map:hover {
+  background: #000;
+}
+
 .bar {
   background: #003056;
   width: 100%;
