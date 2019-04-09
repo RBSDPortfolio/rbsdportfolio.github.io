@@ -276,25 +276,25 @@ span::after {
 }
 
 .gd-bar {
-  background: #53C1DD;
+  background: #000;
   width: 100%;
   height: 1rem;
 }
 
 .ad-bar {
-  background: #F95474;
+  background: #000;
   width: 100%;
   height: 1rem;
 }
 
 .ind-bar {
-  background: #834AAA;
+  background: #000;
   width: 100%;
   height: 1rem;
 }
 
 .int-bar {
-  background: #F4B242;
+  background: #000;
   width: 100%;
   height: 1rem;
 }
