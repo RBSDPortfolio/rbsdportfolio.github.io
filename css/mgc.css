@@ -20,31 +20,47 @@
 }
 
 .event {
-  color: #fff;
+  color: #666;
   height: 8rem;
   width: 33.333333%;
   float: left;
   text-align: center;
   padding: 1.5rem;
+  background: #000;
+  fill: currentColor;
 }
 
 .students {
-  color: #fff;
+  color: #666;
   height: 8rem;
   width: 33.333333%;
   float: left;
   text-align: center;
   padding: 1.5rem;
+  background: #000;
+  fill: currentColor;
 }
 
 .explore {
-  color: #fff;
+  color: #666;
   height: 8rem;
   width: 33.333333%;
   float: left;
   text-align: center;
   padding: 1.5rem;
+  background: #000;
+  fill: currentColor;
 }
+
+.selected {
+  fill: currentColor;
+  color: #fff;
+}
+
+.selected p {
+  color: #fff;
+}
+
 
 /* dropdown nav styles */
 
