@@ -20,31 +20,47 @@
 }
 
 .event {
-  color: #fff;
+  color: #666;
   height: 8rem;
   width: 33.333333%;
   float: left;
   text-align: center;
   padding: 1.5rem;
+  background: #000;
+  fill: currentColor;
 }
 
 .students {
-  color: #fff;
+  color: #666;
   height: 8rem;
   width: 33.333333%;
   float: left;
   text-align: center;
   padding: 1.5rem;
+  background: #000;
+  fill: currentColor;
 }
 
 .explore {
-  color: #fff;
+  color: #666;
   height: 8rem;
   width: 33.333333%;
   float: left;
   text-align: center;
   padding: 1.5rem;
+  background: #000;
+  fill: currentColor;
 }
+
+.selected {
+  fill: currentColor;
+  color: #fff;
+}
+
+.selected p {
+  color: #fff;
+}
+
 
 /* dropdown nav styles */
 
@@ -201,7 +217,7 @@ span::after {
 
 .intro {
   width: 100%;
-  color: #0C3056;
+  color: #000;
   text-align: center;
 }
 
@@ -234,14 +250,14 @@ span::after {
 .register p {
   font-size: 1.3rem;
   margin-bottom: 0;
-  color: #003056;
+  color: #000;
 }
 
 
 .register-btn {
   color: #fff;
   text-align: center;
-  background: #0C3056;
+  background: #000;
   padding: 1rem;
   letter-spacing: .15rem;
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.14),
@@ -257,7 +273,7 @@ span::after {
 
 .register-btn:hover {
   color: #666;
-  background: #071C33;
+  background: #000;
   transition: all 300ms ease-in-out;
 }
 
@@ -270,31 +286,31 @@ span::after {
 }
 
 .bar {
-  background: #003056;
+  background: #000;
   width: 100%;
   height: 1rem;
 }
 
 .gd-bar {
-  background: #53C1DD;
+  background: #000;
   width: 100%;
   height: 1rem;
 }
 
 .ad-bar {
-  background: #F95474;
+  background: #000;
   width: 100%;
   height: 1rem;
 }
 
 .ind-bar {
-  background: #834AAA;
+  background: #000;
   width: 100%;
   height: 1rem;
 }
 
 .int-bar {
-  background: #F4B242;
+  background: #000;
   width: 100%;
   height: 1rem;
 }
@@ -317,7 +333,7 @@ span::after {
 }
 
 .student-thumb p {
-  color: #003056;
+  color: #000;
   height: 2rem;
   padding: 1rem 0 2rem 0;
   text-align: center;
@@ -346,7 +362,7 @@ span::after {
 }
 
 .student-pic a {
-  color: #003056;
+  color: #000;
   text-decoration: none;
 }
 
@@ -427,7 +443,7 @@ span::after {
   height: auto;
   width: 100%;
   padding: 2rem;
-  color: #003056;
+  color: #000;
   font-size: 1.5rem;
   font-weight: 500;
   text-decoration: none;
@@ -442,7 +458,7 @@ span::after {
 }
 
 .info-button a {
-  color: #003056;
+  color: #000;
   margin-left: 1rem;
 }
 
@@ -471,7 +487,7 @@ span::after {
   height: auto;
   width: 20rem;
   padding: 1.5rem 3rem;
-  color: #003056;
+  color: #000;
   text-decoration: none;
   white-space: nowrap;
   background-color: #fff;
@@ -485,7 +501,7 @@ span::after {
 }
 
 .feedback-button-top a {
-  color: #003056;
+  color: #000;
 }
 
 .feedback-button-top:hover {
@@ -504,7 +520,7 @@ span::after {
   height: auto;
   width: 100%;
   padding: 2rem;
-  color: #003056;
+  color: #000;
   text-decoration: none;
   text-align: center;
   white-space: nowrap;
