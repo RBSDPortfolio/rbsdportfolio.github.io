@@ -181,7 +181,7 @@ span::after {
 .landing {
   display: inline-block;
   width: 100%;
-  height: 12rem;
+  height: 25rem;
   background-color: #fff;
   background-blend-mode: multiply;
   background:
@@ -189,11 +189,11 @@ span::after {
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0)
     ),
-    url(../img/glab-ceiling-gradient.jpg);
+    url(../img/glab-ceiling-gradient-new.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
-  background-position:center center;
+  background-size: contain;
+  background-position: top center;
   text-align: center;
 }
 
@@ -203,17 +203,7 @@ span::after {
   width: 18rem;
 }
 
-@media (min-width: 750px) {
-  .landing {
-    height: 25rem;
-  }
 
-  .landing svg {
-    margin: 4.5rem;
-    height: 15rem;
-    width: 65rem;
-  }
-}
 
 .intro {
   width: 100%;
