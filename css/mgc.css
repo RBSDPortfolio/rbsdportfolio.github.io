@@ -178,24 +178,32 @@ span::after {
 
 /* event page styles */
 
-.landing {
+.mgc-header {
+  background: #fff;
+}
+
+.landing-banner {
   display: inline-block;
   width: 100%;
-  height: 25rem;
+  height: 47px;
   background-color: #fff;
   background-blend-mode: multiply;
-  background: url(../img/glab-ceiling-gradient.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: url(../img/glab-ceiling-gradient.jpg) top center repeat-x;
   background-size: contain;
-  background-position: top center;
   text-align: center;
 }
 
-.landing svg {
-  margin: 1rem 0 0 0;
-  height: 30rem;
-  width: 54rem;
+.svg-banner {
+  background: #fff;
+  margin: -.6rem 0 0 0;
+}
+
+.svg-banner svg {
+  width: 100%;
+  max-width: 54rem;
+  margin: 0 auto;
+  display: block;
+  padding: 1rem 0 2rem 0;
 }
 
 
