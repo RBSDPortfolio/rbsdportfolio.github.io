@@ -2,7 +2,8 @@
   box-sizing: border-box;
 }
 
-/* tab styles deleted 
+/* tab styles */ 
+
 .tabs {
   display: inline-block;
   position: fixed;
@@ -58,7 +59,7 @@
 
 .selected p {
   color: #fff;
-}*/
+}
 
 
 /* dropdown nav styles */
